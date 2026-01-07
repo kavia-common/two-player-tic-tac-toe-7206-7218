@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "globals": {
+    "React": "writable"
+  },
+  "rules": {
+    "no-var": "error",
+    "semi": ["error", "always"],
+    "prefer-const": "warn",
+    "eol-last": ["error", "always"],
+    "quotes": ["error", "double"],
+    "prettier/prettier": ["error", {
+      "singleQuote": false,
+      "semi": true,
+      "trailingComma": "none",
+      "endOfLine": "auto"
+    }]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
